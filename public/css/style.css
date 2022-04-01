@@ -74,11 +74,9 @@ li > a:hover {
   color: skyblue;
 }
 
-figure > img::after:hover {
+figure > img:hover {
   box-shadow: rgb(255, 255, 255) 0.5px 5px 2rem;
   transition: all linear 0.5s;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
 }
 
 .btn_style {
@@ -93,6 +91,7 @@ figure > img::after:hover {
 
 button > a {
   color: black;
+  text-transform: none;
 }
 .btn_style:hover {
   box-shadow: rgb(255, 255, 255) 0.9px 1px 0.6rem;
