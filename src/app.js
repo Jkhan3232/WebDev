@@ -1,4 +1,5 @@
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config({ path: "./.env" });
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 4000;
@@ -86,6 +87,8 @@ app.post("/register", async (req, res) => {
 
       const registerjk = await webdev.save();
       // console.log("passing page" + registerjk);
+
+      console.log(`hi i am register ${registerjk}`);
 
       res.status(200).render("index");
       // console.log(registerjk);
